@@ -1,0 +1,3 @@
+[submodule "sdks/php"]
+	path = sdks/php
+	url = git@github.com:klipitkas/opik-php.git
