@@ -10,4 +10,5 @@ export interface OptimizationStudioConfig {
     llmModel: OpikApi.StudioLlmModel;
     evaluation: OpikApi.StudioEvaluation;
     optimizer: OpikApi.StudioOptimizer;
+    opikApiKey?: string;
 }
