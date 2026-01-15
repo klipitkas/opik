@@ -19,6 +19,7 @@ export const OptimizationStudioConfigPublic: core.serialization.ObjectSchema<
     llmModel: core.serialization.property("llm_model", StudioLlmModelPublic),
     evaluation: StudioEvaluationPublic,
     optimizer: StudioOptimizerPublic,
+    opikApiKey: core.serialization.property("opik_api_key", core.serialization.string().optional()),
 });
 
 export declare namespace OptimizationStudioConfigPublic {
@@ -28,5 +29,6 @@ export declare namespace OptimizationStudioConfigPublic {
         llm_model: StudioLlmModelPublic.Raw;
         evaluation: StudioEvaluationPublic.Raw;
         optimizer: StudioOptimizerPublic.Raw;
+        opik_api_key?: string | null;
     }
 }
