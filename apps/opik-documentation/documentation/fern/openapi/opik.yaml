@@ -12223,6 +12223,8 @@ components:
           $ref: "#/components/schemas/StudioEvaluation"
         optimizer:
           $ref: "#/components/schemas/StudioOptimizer"
+        opik_api_key:
+          type: string
     StudioEvaluation:
       required:
       - metrics
@@ -12305,6 +12307,8 @@ components:
           $ref: "#/components/schemas/StudioEvaluation_Write"
         optimizer:
           $ref: "#/components/schemas/StudioOptimizer_Write"
+        opik_api_key:
+          type: string
     Optimization_Write:
       required:
       - dataset_name
@@ -12440,6 +12444,8 @@ components:
           $ref: "#/components/schemas/StudioEvaluation_Public"
         optimizer:
           $ref: "#/components/schemas/StudioOptimizer_Public"
+        opik_api_key:
+          type: string
     Optimization_Public:
       required:
       - dataset_name
@@ -12659,6 +12665,10 @@ components:
           type: integer
           format: int64
           readOnly: true
+        thread_count:
+          type: integer
+          format: int64
+          readOnly: true
         guardrails_failed_count:
           type: integer
           format: int64
@@ -12870,6 +12880,9 @@ components:
         trace_count:
           type: integer
           format: int64
+        thread_count:
+          type: integer
+          format: int64
         guardrails_failed_count:
           type: integer
           format: int64
@@ -12972,6 +12985,10 @@ components:
             readOnly: true
           readOnly: true
         trace_count:
+          type: integer
+          format: int64
+          readOnly: true
+        thread_count:
           type: integer
           format: int64
           readOnly: true
